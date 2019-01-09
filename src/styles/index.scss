@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import "./auth/_auth-card";
+
+@import "./form/_dialog";
+@import "./form/_form";
+
+@import "./_inline-loader";
+@import "./_loader";
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Open sans", sans-serif;
+}
+
+div#root {
+  height: 100%;
+}
+
+.app {
+  &-container {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding: 10px;
+  }
+
+  &-loader-container {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Fix customer scroll bar z-index
+.ps__rail-y {
+  z-index: 1;
+}

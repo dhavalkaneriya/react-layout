@@ -1,0 +1,55 @@
+.setting-header {
+  min-height: 70px;
+}
+.setting-header-group {
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 70px;
+}
+.setting-menu-name {
+  color: #222222;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 30px;
+  width: 50%;
+  float: left;
+}
+.setting-header-action {
+  float: right;
+  margin: 14px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f5f1ff;
+  color: #542bb4;
+  height: 40px;
+  width: 80px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.setting-footer-left-side {
+  width: 60%;
+}
+.setting-footer-right-side {
+  width: 40%;
+  float: right;
+}
+.setting-edit-close {
+  float: left;
+  color: #542bb4;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.setting-edit-delete {
+  float: right;
+  background-color: #fcecee;
+  color: #d0021b;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+.setting-menu-wrapper {
+  // overflow-y: auto;
+}

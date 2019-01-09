@@ -1,0 +1,192 @@
+.tag-body-header {
+  display: flex;
+  padding: 10px 0px;
+}
+.tag-body-header div:nth-child(1) {
+  width: 10%;
+}
+.tag-body-header div:nth-child(2) {
+  width: 50%;
+}
+.tag-body-header div:nth-child(3) {
+  width: 30%;
+}
+.tag-body-header div {
+  padding: 10px 40px;
+  color: #9b9b9b;
+  font-size: 12px;
+  font-weight: 600;
+}
+.tag-body-detail {
+  display: flex;
+}
+.tag-body-detail div:nth-child(1) {
+  width: 10%;
+  font-size: 14px;
+  padding: 10px 40px;
+}
+.tag-body-detail div:nth-child(2) {
+  width: 50%;
+  color: #542bb4;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 40px;
+}
+.tag-body-detail div:nth-child(3) {
+  width: 20%;
+  color: #9b9b9b;
+  font-size: 14px;
+  padding: 10px 40px;
+}
+.tag-body-detail div:nth-child(4) {
+  color: #9b9b9b;
+  font-size: 14px;
+  text-align: right;
+  width: 20%;
+  padding: 10px 40px;
+}
+.tag-list-hr {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 10px 20px;
+}
+.tag-body-details {
+  // padding: 0px 20px;
+}
+.tag-body-detail {
+  // padding: 20px 20px;
+  // border-bottom: solid 0.9px #e5e5e5;
+}
+
+.tag-icon-wrapper {
+  padding-bottom: 40px;
+}
+
+.tag-icon-selector {
+  width: 23px;
+}
+span.blue-purple-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  position: relative;
+  float: left;
+}
+input[type="radio"]:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+#blue-purple:after {
+  background-color: #542bb4;
+  border: 2px solid #542bb4;
+}
+#scarlet:after {
+  background-color: #d0021b;
+  border: 2px solid #d0021b;
+}
+#squash:after {
+  background-color: #f5a623;
+  border: 2px solid #f5a623;
+}
+#sepia:after {
+  background-color: #8b572a;
+  border: 2px solid #8b572a;
+}
+#green:after {
+  background-color: #23b41e;
+  border: 2px solid #23b41e;
+}
+#bright-blue:after {
+  background-color: #007eff;
+  border: 2px solid #007eff;
+}
+#greyish-brown:after {
+  background-color: #4a4a4a;
+  border: 2px solid #4a4a4a;
+}
+
+input[type="radio"]:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+#blue-purple:checked:after {
+  content: "";
+  border: 2px solid #542bb4;
+  box-shadow: 0px 0px 10px #542bb4;
+  background-color: #542bb4;
+  // background-image: url("~@assets/checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#scarlet:checked:after {
+  background-color: #d0021b;
+  border: 2px solid #d0021b;
+  box-shadow: 0px 0px 10px #d0021b;
+  // background-image: url("~@assets/checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#squash:checked:after {
+  background-color: #f5a623;
+  border: 2px solid #f5a623;
+  box-shadow: 0px 0px 10px #f5a623;
+  // background-image: url("~@assets/checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sepia:checked:after {
+  background-color: #8b572a;
+  border: 2px solid #8b572a;
+  box-shadow: 0px 0px 10px #8b572a;
+  // background-image: url("~@assets/checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#green:checked:after {
+  background-color: #23b41e;
+  border: 2px solid #23b41e;
+  box-shadow: 0px 0px 10px #23b41e;
+  // background-image: url("~@assets/checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#bright-blue:checked:after {
+  background-color: #007eff;
+  border: 2px solid #007eff;
+  box-shadow: 0px 0px 10px #007eff;
+  // background-image: url("~@assets/checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#greyish-brown:checked:after {
+  background-color: #4a4a4a;
+  border: 2px solid #4a4a4a;
+  box-shadow: 0px 0px 10px #4a4a4a;
+  // background-image: url("~@assets/checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.select-role-icon-error {
+  display: flex;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.edit-pencil {
+  cursor: pointer;
+}

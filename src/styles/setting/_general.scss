@@ -1,0 +1,150 @@
+.general-setting-body {
+  width: 80%;
+  margin: 0 auto;
+}
+.body-section-title {
+  color: #18004f;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 40px 0;
+}
+.general-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #542bb4;
+}
+.section-detail {
+  display: flex;
+}
+.section-detail p {
+  color: #9b9b9b;
+  font-size: 14px;
+  width: 100%;
+}
+.upper-section {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+
+/* css for switch button*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #542bb4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #542bb4;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* over switch css*/
+
+.api-info {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+.hubspot-api {
+  width: 49%;
+  float: left;
+  border: 1px solid #e5e5e5;
+  padding: 30px 10px;
+  margin: 30px 0;
+  margin-right: 15px;
+}
+.smooch-api {
+  width: 49%;
+  float: left;
+  border: 1px solid #e5e5e5;
+  padding: 30px 10px;
+  margin: 30px 0;
+}
+.hubspot-title,
+.smooch-title {
+  color: #542bb4;
+  font-size: 16px;
+  font-weight: 600;
+}
+.hubspot-info,
+.smooch-info {
+  color: #9b9b9b;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.activate-api-input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.activate-hubspot {
+  color: #542bb4;
+  background-color: #f5f1ff;
+  border-color: #f5f1ff;
+  border-radius: 19.5px;
+  width: 100px;
+  text-align: center;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.activate-smooch {
+  color: #527d20;
+  background-color: #e2ffd2;
+  border-color: #e2ffd2;
+  border-radius: 19.5px;
+  width: 100px;
+  text-align: center;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+}

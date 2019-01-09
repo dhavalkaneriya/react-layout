@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Icon } from "antd";
+import { Menu } from "antd";
 
 export default class Navigation extends Component {
   state = {
-    current: "dashboard"
+    current: this.props.location.pathname
   };
 
   handleClick = e => {
@@ -18,13 +18,17 @@ export default class Navigation extends Component {
       <Menu
         onClick={this.handleClick}
         selectedKeys={[this.state.current]}
-        mode="horizontal"
+        mode="vertical"
+        style={{ width: 300 }}
       >
-        <Menu.Item key="dashboard">
+        <Menu.Item key="/app/dashboard">
           <Link to="/dashboard">DashBoard</Link>
         </Menu.Item>
-        <Menu.Item key="new">
-          <Link to="new-organization">Create New</Link>
+        <Menu.Item key="/app/new-organization">
+          <Link to="new-organization">Create organization</Link>
+        </Menu.Item>
+        <Menu.Item key="/app/organizations">
+          <Link to="organizations">Organizations</Link>
         </Menu.Item>
       </Menu>
     );

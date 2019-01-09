@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="22px" viewBox="0 0 29 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-erase</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-erase" fill-rule="nonzero">
+            <polygon id="Path" fill="#FFFFFF" points="0.144496947 10.3780383 9.21792568 0.190370008 28.9228759 0.190370008 28.9228759 21.9888548 9.21792568 21.9888548 0.144496947 11.9856286"></polygon>
+            <path d="M18.7105753,11.0142341 L23.4531317,15.5342332 L22.0732966,16.9820091 L17.3307402,12.46201 L13.1196002,16.8804997 L11.6718243,15.5006646 L15.8829643,11.0821749 L11.3100824,6.72388796 L12.6899176,5.27611204 L17.2627994,9.63439904 L21.9299454,4.73745046 L23.3777213,6.11728557 L18.7105753,11.0142341 Z" id="Combined-Shape" fill="#542BB4"></path>
+        </g>
+    </g>
+</svg>

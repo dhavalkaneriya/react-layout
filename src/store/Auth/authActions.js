@@ -3,7 +3,7 @@ import JWTDecoder from "jwt-decode";
 import _ from "lodash";
 
 import history from "../../router/history";
-import { authApi, agentApi, taskRouterApi } from "@api";
+import { authApi } from "../../api/index";
 
 import AUTH_TYPE from "./authTypes";
 
@@ -12,17 +12,6 @@ const { dispatch } = store;
 export const login = payload => {
   return authApi
     .login(payload)
-    .then(result => {
-      const { token } = result;
-
-      dispatch({ type: AUTH_TYPE.LOGIN, token });
-    })
-    .then(() => updateAuthData());
-};
-
-export const googleLogin = payload => {
-  return authApi
-    .googleLogin(payload)
     .then(result => {
       const { token } = result;
 
@@ -43,7 +32,7 @@ export const updateAuthData = (payload = {}) => {
   if (token) {
     const tokenData = JWTDecoder(token);
 
-    return agentApi
+    return authApi
       .profile(tokenData.email)
       .then(result => {
         const { data } = result;
@@ -64,6 +53,6 @@ export const updateAuthData = (payload = {}) => {
   return Promise.resolve();
 };
 
-export const updateUserStatus = _.throttle(status => {
-  return taskRouterApi.updateWorkerStatus(status);
-}, 500);
+// export const updateUserStatus = _.throttle(status => {
+//   return taskRouterApi.updateWorkerStatus(status);
+// }, 500);

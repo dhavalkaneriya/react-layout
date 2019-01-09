@@ -1,0 +1,22 @@
+.loader-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.dashboard {
+  &-container {
+    display: flex;
+    height: 100vh;
+  }
+
+  &-view-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    height: 100%;
+  }
+}

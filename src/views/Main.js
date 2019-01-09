@@ -5,6 +5,7 @@ import Loader from "../components/Loader";
 
 import Dashboard from "./Dashboard";
 import Neworganization from "./Neworganization";
+import Allorganization from "./Allorganization";
 
 export default class Main extends Component {
   render() {
@@ -27,6 +28,10 @@ export default class Main extends Component {
           <PrivateRoute
             path={`${match.path}/new-organization`}
             component={Neworganization}
+          />
+          <PrivateRoute
+            path={`${match.path}/organizations`}
+            component={Allorganization}
           />
         </Switch>
       </div>

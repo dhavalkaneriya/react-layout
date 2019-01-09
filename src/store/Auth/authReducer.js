@@ -1,13 +1,9 @@
-import { USER_STATUS } from "../../constants";
-
 import AUTH_TYPE from "./authTypes";
 
 const defaults = {
-  agent: {
-    email: "",
-    status: USER_STATUS.OFFLINE
-  },
-  otpData: {}
+  admin: {
+    email: ""
+  }
 };
 
 export default function appReducer(state = defaults, action) {
@@ -15,21 +11,21 @@ export default function appReducer(state = defaults, action) {
     case AUTH_TYPE.LOGIN: {
       const token = action.token || null;
 
-      localStorage.setItem("token", token);
+      localStorage.setItem("impekable-admin-token", token);
 
       return state;
     }
 
     case AUTH_TYPE.LOGOUT: {
-      localStorage.removeItem("token");
+      localStorage.removeItem("impekable-admin-token");
 
       return { ...defaults };
     }
 
     case AUTH_TYPE.UPDATE_AUTH_DATA: {
-      const { agent } = state;
+      const { admin } = state;
 
-      return { ...state, agent: { ...agent, ...action.payload } };
+      return { ...state, admin: { ...admin, ...action.payload } };
     }
 
     default:
